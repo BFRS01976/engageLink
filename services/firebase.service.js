@@ -44,6 +44,7 @@ const setupFirebase = async (registration) => {
     //   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/dist/firebase-messaging-sw.js', { scope: '/' })
       .then((registration) => {
+        
         console.log('Service Worker registered with scope:', registration.scope);
         getToken(messaging, {
           vapidKey: firebaseConfig.vapidKey,
