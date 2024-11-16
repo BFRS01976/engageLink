@@ -54,7 +54,7 @@ const setupFirebase = async (registration) => {
             if (currentToken) {
               debugger
 
-              wigzo?.registerWebPushHelper({ token: currentToken }, "HTTPS");
+              // wigzo?.registerWebPushHelper({ token: currentToken }, "HTTPS");
               // Send the token to your server and update the UI if necessary
 
             } else {
