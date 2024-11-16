@@ -42,7 +42,7 @@ const setupFirebase = async (registration) => {
   // messaging.useServiceWorker('./dist/firebase-messaging-sw.js');
   if ('serviceWorker' in navigator) {
     //   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('https://bfrs01976.github.io/engageLink/dist/firebase-messaging-sw.js', { scope: '/' })
+    navigator.serviceWorker.register('/engageLink/dist/firebase-messaging-sw.js', { scope: '/' })
       .then((registration) => {
 
         console.log('Service Worker registered with scope:', registration.scope);
